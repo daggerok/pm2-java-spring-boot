@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ps2</title>
+  <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body class="container">
+<h3 class="panel panel-heading">hi! {{someVar}}</h3>
+<ul class="users">
+  {{#users}}
+    <li id="{{id}}">{{username}}</li>
+  {{/users}}
+</ul>
+</body>
+</html>

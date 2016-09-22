@@ -1,0 +1,13 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+    mongodb:
+      port: 0
+  application:
+    name: pm2-java-spring-boot
+  mustache:
+    cache: true
+    suffix: .hbs
+management:
+  context-path: /admin

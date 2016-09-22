@@ -1,0 +1,27 @@
+{
+  "name": "pm2-java-spring-boot",
+  "version": "1.0.0",
+  "description": "pm2-java-spring-boot",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm i --no-optional",
+    "start": "pm2 start process.json --only pm2-java-spring-boot",
+    "ls": "pm2 ls",
+    "show": "pm2 show pm2-java-spring-boot",
+    "restart": "pm2 restart pm2-java-spring-boot",
+    "stop": "pm2 stop pm2-java-spring-boot",
+    "delete": "pm2 delete pm2-java-spring-boot",
+    "kill": "pm2 kill"
+  },
+  "keywords": [
+    "java",
+    "spring-boot",
+    "gradle",
+    "pm2"
+  ],
+  "author": "daggerok",
+  "license": "ISC",
+  "devDependencies": {
+    "pm2": "*"
+  }
+}

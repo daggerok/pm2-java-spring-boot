@@ -1,0 +1,36 @@
+buildscript {
+  repositories { jcenter() }
+  dependencies { classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE' }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+version '0.0.1'
+group 'daggerok'
+
+jar { baseName = 'pm2-java-spring-boot' }
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories { jcenter() }
+
+dependencies {
+  compile('org.springframework.boot:spring-boot-starter-actuator')
+  compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+  compile('org.springframework.boot:spring-boot-starter-data-rest')
+  compile('org.springframework.boot:spring-boot-starter-hateoas')
+  compile('org.springframework.boot:spring-boot-starter-mustache')
+  compile('de.flapdoodle.embed:de.flapdoodle.embed.mongo')
+  compile('org.projectlombok:lombok')
+  compile('org.webjars:bootstrap:3.3.7-1')
+  compile('org.webjars:webjars-locator:0.32')
+  compile('org.springframework.boot:spring-boot-starter-mustache')
+  testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+springBoot {
+  executable = true
+}

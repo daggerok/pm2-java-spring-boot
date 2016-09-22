@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "pm2-java-spring-boot",
+      "cwd": ".",
+      "script": "/usr/bin/java",
+      "args": [
+        "-jar",
+        "build/libs/pm2-java-spring-boot-0.0.1.jar"
+      ],
+      "watch": [
+        "build/libs/pm2-java-spring-boot-0.0.1.jar"
+      ],
+      "env": {
+        "PORT": "8000",
+        "SOME_VAR": "^.^",
+        "SPRING_PROFILES_ACTIVE": "prod"
+      },
+      "node_args": [],
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "exec_interpreter": "",
+      "exec_mode": "fork"
+    }
+  ]
+}
