@@ -1,5 +1,4 @@
-pm2-java-spring-boot
-====================
+# pm2-java-spring-boot [![Build Status](https://travis-ci.org/daggerok/pm2-java-spring-boot.svg?branch=master)](https://travis-ci.org/daggerok/pm2-java-spring-boot)
 
 ```fish
 gradle build
