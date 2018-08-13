@@ -1,6 +1,6 @@
 {
   "name": "pm2-java-spring-boot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "pm2-java-spring-boot",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   "author": "daggerok",
   "license": "ISC",
   "devDependencies": {
-    "pm2": "*"
+    "pm2": "3.0.3"
   }
 }

@@ -1,6 +1,6 @@
 npm-*.log*
-gradle*
-.gradle
+/out/
+.gradle/
 node_modules/
 
 ### STS ###
@@ -11,7 +11,7 @@ node_modules/
 .springBeans
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr

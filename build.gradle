@@ -34,3 +34,5 @@ dependencies {
 springBoot {
   executable = true
 }
+
+defaultTasks 'clean', 'build'
